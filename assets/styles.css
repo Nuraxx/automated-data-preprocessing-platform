@@ -1,0 +1,22 @@
+/* Theme-friendly Streamlit tweaks (no hard-coded colors) */
+
+/* Slightly tighter top padding for a more app-like feel */
+section.main > div.block-container {
+  padding-top: 1.25rem;
+}
+
+/* Improve dataframe/table readability on wide screens */
+[data-testid="stDataFrame"] {
+  width: 100%;
+}
+
+/* Make metrics feel more dashboard-like */
+[data-testid="stMetricValue"] {
+  font-size: 1.6rem;
+  line-height: 1.15;
+}
+
+/* Subtle spacing for expanders */
+[data-testid="stExpander"] {
+  border-radius: 12px;
+}

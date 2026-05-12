@@ -1,0 +1,52 @@
+EmployeeID,Age,Salary,Department,Country,JoinDate,IsRemote,PerformanceScore,TenureYears,Notes
+1001,29,72000,Engineering,USA,2021-03-14,Yes,4,3.2,
+1002,41,115000,Engineering,Canada,2019/11/02,No,5,5.8,Promoted last year
+1003,35,89000,Sales,USA,2020-07-21,No,3,4.1,
+1004,,64000,Support,UK,2022-01-05,Yes,4,2.4,
+1005,26,52000,Support,Germany,2023-06-18,Yes,3,1.0,
+1006,54,132000,Finance,USA,2017-09-30,No,4,8.6,
+1007,31,78000,Engineering,India,2020-02-10,Yes,4,4.7,
+1008,38,,Sales,France,2020-12-01,No,2,3.5,
+1009,45,99000,Marketing,USA,2018-05-22,No,4,6.9,
+1010,28,61000,Support,Spain,2022-10-15,YES,3,2.0,
+1011,33,82000,Engineering,Brazil,2021-08-09,No,4,3.0,
+1012,30,76000,Engineering,USA,2021-03-14,Yes,4,3.2,
+1013,52,250000,Executive,USA,2016-04-11,No,5,10.2,Outlier salary example
+1014,27,58000,Sales,USA,2023-02-28,Yes,3,0.9,
+1015,39,91000,Marketing,Japan,2019-01-17,No,4,6.1,
+1016,22,48000,Support,USA,2024-03-01,Yes,3,0.2,
+1017,47,105000,Finance,Canada,2018-07-08,No,4,7.3,
+1018,36,87000,Engineering,UK,2020-06-19,No,4,4.0,
+1019,44,98000,Sales,India,2018-12-27,No,3,6.8,
+1020,29,74000,Engineering,USA,2021-03-14,Yes,4,3.2,
+1021,31,78000,Engineering,India,2020-02-10,Yes,4,4.7,
+1022,31,78000,Engineering,India,2020-02-10,Yes,4,4.7,Duplicate row for testing
+1022,31,78000,Engineering,India,2020-02-10,Yes,4,4.7,Duplicate row for testing
+1023,50,123000,Finance,USA,2017-09-30,No,4,8.6,
+1024,34,86000,Sales,France,2020-12-01,No,2,3.5,
+1025,40,95000,Marketing,USA,2018-05-22,No,4,6.9,
+1026,28,61000,Support,Spain,2022-10-15,Yes,3,2.0,
+1027,33,82000,Engineering,Brazil,2021-08-09,No,4,3.0,
+1028,38,90000,Sales,France,,No,2,3.5,Missing join date
+1029,45,99000,Marketing,USA,2018-05-22,No,4,6.9,
+1030,41,115000,Engineering,Canada,2019/11/02,No,5,5.8,
+1031,41,115000,Engineering,Canada,2019/11/02,No,5,5.8,Exact duplicate values
+1032,41,115000,Engineering,Canada,2019/11/02,No,5,5.8,Exact duplicate values
+1033,29,72000,Engineering,USA,2021-03-14,Yes,4,3.2,
+1034,29,72000,Engineering,USA,2021-03-14,Yes,4,3.2,Duplicate-ish group
+1035,29,72000,Engineering,USA,2021-03-14,Yes,4,3.2,Duplicate-ish group
+1036,60,140000,Finance,USA,2015-02-01,No,4,11.3,
+1037,25,51000,Support,Mexico,2023-07-19,Yes,3,0.8,
+1038,37,88000,Sales,Italy,2020-04-13,No,3,4.4,
+1039,32,80000,Engineering,USA,2021-10-27,No,4,2.7,
+1040,28,61000,Support,Spain,2022-10-15,No,3,2.0,IsRemote as No
+1041,28,61000,Support,Spain,2022-10-15,,3,2.0,Missing boolean
+1042,46,100500,Marketing,South Africa,2018-03-04,No,4,7.0,
+1043,33,83000,Engineering,USA,2021-12-09,No,4,2.3,
+1044,35,88000,Engineering,USA,2020-06-19,No,4,4.0,
+1045,19,42000,Support,USA,2024-01-05,Yes,2,0.1,Very low tenure
+1046,58,138000,Finance,USA,2016-11-23,No,4,9.7,
+1047,43,97000,Sales,USA,2018-12-27,No,3,6.8,
+1048,30,76000,Engineering,USA,2021-03-14,Yes,4,3.2,
+1049,30,76000,Engineering,USA,2021-03-14,Yes,4,3.2,Potential duplicates
+1050,30,76000,Engineering,USA,2021-03-14,Yes,4,3.2,Potential duplicates
