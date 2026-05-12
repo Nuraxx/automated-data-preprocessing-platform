@@ -653,7 +653,7 @@ def page_preprocess() -> None:
 
 
 def page_dashboard() -> None:
-    st.title("📊 Visualization Dashboard")
+    st.title("Visualization Dashboard")
     st.caption("Interactive charts powered by Plotly.")
 
     if not _require_dataset():
@@ -825,7 +825,7 @@ def page_export() -> None:
 def main() -> None:
     st.set_page_config(
         page_title="Auto Data Preprocessing Studio",
-        page_icon="🧠",
+        page_icon="",
         layout="wide",
         initial_sidebar_state="expanded",
     )
@@ -834,7 +834,7 @@ def main() -> None:
     _load_css()
 
     with st.sidebar:
-        st.title("🧠 Auto-Preprocess")
+        st.title("Auto-Preprocess")
         st.caption("Automated preprocessing • Visual analytics • Exportable reports")
 
         page = st.radio(
