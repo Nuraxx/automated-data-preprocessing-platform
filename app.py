@@ -384,7 +384,7 @@ def page_analysis() -> None:
     st.divider()
 
     # AI recommendations
-    st.subheader("🧠 AI-style recommendations")
+    st.subheader(" AI-style recommendations")
     recs: List[str] = analysis["recommendations"]
     if not recs:
         st.info("No major issues detected. Your dataset looks healthy.")
@@ -393,7 +393,7 @@ def page_analysis() -> None:
 
 
 def page_preprocess() -> None:
-    st.title("🧹 Preprocessing & Cleaning")
+    st.title(" Preprocessing & Cleaning")
     st.caption("Apply preprocessing steps and track a reproducible history.")
 
     if not _require_dataset():
@@ -743,7 +743,11 @@ def page_export() -> None:
         st.metric("Columns", f"{raw_df.shape[1]:,}")
         st.metric("Missing cells", f"{int(raw_df.isna().sum().sum()):,}")
         st.metric("Duplicate rows", f"{count_duplicates(raw_df):,}")
-        st.plotly_chart(quality_score_gauge(raw_analysis["quality"].score), use_container_width=True)
+        st.plotly_chart(
+            quality_score_gauge(raw_analysis["quality"].score),
+            use_container_width=True,
+            key="export_quality_raw_gauge",
+        )
 
     with c2:
         st.markdown("**After (Cleaned)**")
@@ -751,7 +755,11 @@ def page_export() -> None:
         st.metric("Columns", f"{cleaned_df.shape[1]:,}")
         st.metric("Missing cells", f"{int(cleaned_df.isna().sum().sum()):,}")
         st.metric("Duplicate rows", f"{analysis['duplicates']:,}")
-        st.plotly_chart(quality_score_gauge(analysis["quality"].score), use_container_width=True)
+        st.plotly_chart(
+            quality_score_gauge(analysis["quality"].score),
+            use_container_width=True,
+            key="export_quality_cleaned_gauge",
+        )
 
     st.divider()
 
@@ -832,11 +840,11 @@ def main() -> None:
         page = st.radio(
             "Navigation",
             options=[
-                "📁 Upload & Overview",
-                "🔎 Analysis",
-                "🧹 Preprocess",
-                "📊 Dashboard",
-                "⬇️ Export",
+                "Upload & Overview",
+                "Analysis",
+                "Preprocess",
+                "Dashboard",
+                "⬇Export",
             ],
         )
 
@@ -852,15 +860,15 @@ def main() -> None:
             st.rerun()
 
     # Route
-    if page == "📁 Upload & Overview":
+    if page == "Upload & Overview":
         page_upload()
-    elif page == "🔎 Analysis":
+    elif page == "Analysis":
         page_analysis()
-    elif page == "🧹 Preprocess":
+    elif page == "Preprocess":
         page_preprocess()
-    elif page == "📊 Dashboard":
+    elif page == "Dashboard":
         page_dashboard()
-    elif page == "⬇️ Export":
+    elif page == "⬇Export":
         page_export()
     else:
         st.plotly_chart(empty_figure("Unknown page"))
