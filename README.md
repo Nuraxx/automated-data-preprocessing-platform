@@ -1,4 +1,4 @@
-# AI-Powered Data Preprocessing Web App (Streamlit)
+# Automated Data Preprocessing Web App (Streamlit)
 
 A production-style Streamlit application for uploading CSV datasets and performing automated preprocessing, cleaning, analysis, transformation, and interactive visualization — with AI-style rule-based recommendations.
 
