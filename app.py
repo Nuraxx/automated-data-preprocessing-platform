@@ -165,7 +165,7 @@ def _download_button_from_df(label: str, df: pd.DataFrame, file_name: str) -> No
 
 
 def page_upload() -> None:
-    st.title("📁 Upload & Overview")
+    st.title("Upload & Overview")
     st.caption("Upload a CSV to automatically analyze, clean, transform, and export a high-quality dataset.")
 
     uploaded = st.file_uploader(
@@ -291,7 +291,7 @@ def page_upload() -> None:
 
 
 def page_analysis() -> None:
-    st.title("🔎 Dataset Analysis")
+    st.title("Dataset Analysis")
     st.caption("Automated dataset profiling, quality scoring, and AI-style preprocessing suggestions.")
 
     if not _require_dataset():
@@ -716,7 +716,7 @@ def page_dashboard() -> None:
 
 
 def page_export() -> None:
-    st.title("⬇️ Export & Report")
+    st.title("Export & Report")
     st.caption("Download cleaned data and export a detailed preprocessing report.")
 
     if not _require_dataset():
