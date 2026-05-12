@@ -1,4 +1,4 @@
-"""AI-powered Data Preprocessing Web Application (Streamlit).
+"""Automated Data Preprocessing Web Application (Streamlit).
 
 Run:
   streamlit run app.py
@@ -816,7 +816,7 @@ def page_export() -> None:
 
 def main() -> None:
     st.set_page_config(
-        page_title="AI Data Preprocessing Studio",
+        page_title="Auto Data Preprocessing Studio",
         page_icon="🧠",
         layout="wide",
         initial_sidebar_state="expanded",
@@ -826,7 +826,7 @@ def main() -> None:
     _load_css()
 
     with st.sidebar:
-        st.title("🧠 PreprocessAI")
+        st.title("🧠 Auto-Preprocess")
         st.caption("Automated preprocessing • Visual analytics • Exportable reports")
 
         page = st.radio(
